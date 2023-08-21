@@ -12,12 +12,9 @@ function addListItem() {
     newItem.textContent = trimmedValue;
     
     newItem.addEventListener('click', function () {
-        if (newItem.style.textDecoration !== 'line-through') {
-            newItem.style.textDecoration = 'line-through';
-        }
-        else {
+        newItem.style.textDecoration !== 'line-through' ?
+            newItem.style.textDecoration = 'line-through' :
             newItem.style.textDecoration = 'none';
-        }
     });
 
     newItem.addEventListener("contextmenu", function (e) {
