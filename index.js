@@ -25,7 +25,6 @@ function addListItem() {
         e.preventDefault();
         itemsList.removeChild(newItem);
         savedItems.pop();
-
         saveToLocalStorage();
     });
     itemsList.appendChild(newItem);
